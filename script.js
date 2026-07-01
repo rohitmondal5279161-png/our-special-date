@@ -301,7 +301,7 @@ function typeMessage() {
 }
 function startRelationshipTimer() {
 
-    const startDate = new Date("2019-11-01T00:00:00");
+    const startDate = new Date("2020-11-01T00:00:00");
 
     function updateTimer() {
 
