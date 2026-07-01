@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Special Date ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+PRELOADER
+=========================== -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <div class="loader-heart">❤️</div>
+
+            <h2>Preparing Something Special...</h2>
+
+            <p>Please wait a moment...</p>
+
+        </div>
+
+    </div>
+
+    <!-- ===========================
+BACKGROUND EFFECTS
+=========================== -->
+
+    <div id="gradient-bg"></div>
+
+    <div id="floating-hearts"></div>
+
+    <div id="falling-petals"></div>
+
+    <div id="sparkles"></div>
+
+    <div id="confetti-container"></div>
+
+    <!-- ===========================
+BACKGROUND MUSIC
+=========================== -->
+
+    <button id="musicBtn">
+
+        🎵
+
+    </button>
+
+    <!-- ===========================
+MAIN APP
+=========================== -->
+
+    <div id="app">
+
+        <!-- ===========================
+WELCOME PAGE
+=========================== -->
+
+        <section id="welcomePage" class="page active">
+
+            <div class="glass-card">
+
+                <h1>
+
+                    Hello Beautiful ❤️
+
+                </h1>
+
+                <p>
+
+                    I have planned something
+                    very special for you...
+
+                </p>
+
+                <p>
+
+                    Will you spend
+                    a few minutes with me?
+
+                    🥹❤️
+
+                </p>
+
+                <button id="startBtn" class="primary-btn">
+
+                    Let's Begin ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ===========================
+PROPOSAL PAGE
+=========================== -->
+
+        <section id="proposalPage" class="page">
+
+            <div class="glass-card">
+
+                <h2>
+
+                    Every smile of yours
+                    makes my day brighter.
+
+                    🌸
+
+                </h2>
+
+                <p>
+
+                    Every moment with you
+                    is precious...
+
+                </p>
+
+                <p>
+
+                    So today,
+                    I want to ask you something...
+
+                    ❤️
+
+                </p>
+
+                <h1 class="big-heart">
+
+                    💖
+
+                </h1>
+
+                <h2>
+
+                    Will you go on
+                    a date with me?
+
+                    🌹
+
+                </h2>
+
+                <div class="button-group">
+
+                    <button id="yesBtn" class="yes-btn">
+
+                        YES ❤️
+
+                    </button>
+
+                    <button id="noBtn" class="no-btn">
+
+                        NO 💔
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+PART 2 STARTS FROM HERE
+(Date + Time + Food + Confirmation)
+===================================================== -->
+        <!-- ===========================
+DATE PAGE
+=========================== -->
+
+        <section id="datePage" class="page">
+
+            <div class="glass-card">
+
+                <h2>📅 Choose Our Date</h2>
+
+                <p>
+                    Choose the day for our special date ❤️
+                </p>
+
+                <input type="date" id="datePicker" class="romantic-input">
+
+                <button id="dateNextBtn" class="primary-btn">
+
+                    Next ➜
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ===========================
+TIME PAGE
+=========================== -->
+
+        <section id="timePage" class="page">
+
+            <div class="glass-card">
+
+                <h2>🕒 Choose Time</h2>
+
+                <p>
+
+                    What time shall we meet?
+
+                    🥰
+
+                </p>
+
+                <input type="time" id="timePicker" class="romantic-input">
+
+                <button id="timeNextBtn" class="primary-btn">
+
+                    Next ➜
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ===========================
+FOOD PAGE
+=========================== -->
+
+        <section id="foodPage" class="page">
+
+            <div class="glass-card">
+
+                <h2>
+
+                    🍽️
+                    What shall we eat?
+
+                </h2>
+
+                <p>
+
+                    Choose one or more dishes ❤️
+
+                </p>
+
+                <div class="food-grid">
+
+                    <div class="food-card" data-food="🍛 Biryani">
+
+                        <div class="food-icon">🍛</div>
+
+                        <h3>Biryani</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🥩 Mutton">
+
+                        <div class="food-icon">🥩</div>
+
+                        <h3>Mutton</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍗 Chicken">
+
+                        <div class="food-icon">🍗</div>
+
+                        <h3>Chicken</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍕 Pizza">
+
+                        <div class="food-icon">🍕</div>
+
+                        <h3>Pizza</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍔 Burger">
+
+                        <div class="food-icon">🍔</div>
+
+                        <h3>Burger</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🥟 Momos">
+
+                        <div class="food-icon">🥟</div>
+
+                        <h3>Momos</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍜 Noodles">
+
+                        <div class="food-icon">🍜</div>
+
+                        <h3>Noodles</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍝 Pasta">
+
+                        <div class="food-icon">🍝</div>
+
+                        <h3>Pasta</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍟 French Fries">
+
+                        <div class="food-icon">🍟</div>
+
+                        <h3>Fries</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍦 Ice Cream">
+
+                        <div class="food-icon">🍦</div>
+
+                        <h3>Ice Cream</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍰 Dessert">
+
+                        <div class="food-icon">🍰</div>
+
+                        <h3>Dessert</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="☕ Coffee">
+
+                        <div class="food-icon">☕</div>
+
+                        <h3>Coffee</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🥤 Cold Drink">
+
+                        <div class="food-icon">🥤</div>
+
+                        <h3>Cold Drink</h3>
+
+                    </div>
+
+                    <div class="food-card" data-food="🍫 Chocolate">
+
+                        <div class="food-icon">🍫</div>
+
+                        <h3>Chocolate</h3>
+
+                    </div>
+
+                </div>
+
+                <input type="text" id="customFood" class="romantic-input"
+                    placeholder="Or type your own favourite food...">
+
+                <p class="hint">
+
+                    💡 You can choose multiple dishes.
+
+                </p>
+
+                <button id="foodNextBtn" class="primary-btn">
+
+                    Continue ❤️
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+PART 2B STARTS FROM HERE
+(Confirmation Popup)
+===================================================== -->
+        <!-- ===========================
+CONFIRMATION POPUP
+=========================== -->
+
+        <div id="confirmModal" class="modal">
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-card">
+
+                <h1>
+
+                    ❤️ Date Confirmed ❤️
+
+                </h1>
+
+                <p class="modal-subtitle">
+
+                    Everything looks perfect!
+
+                    ✨
+
+                </p>
+
+                <div class="summary-box">
+
+                    <div class="summary-item">
+
+                        <span class="summary-icon">
+
+                            📅
+
+                        </span>
+
+                        <div>
+
+                            <h3>Date</h3>
+
+                            <p id="summaryDate">
+
+                                Not Selected
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span class="summary-icon">
+
+                            🕒
+
+                        </span>
+
+                        <div>
+
+                            <h3>Time</h3>
+
+                            <p id="summaryTime">
+
+                                Not Selected
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span class="summary-icon">
+
+                            🍽️
+
+                        </span>
+
+                        <div>
+
+                            <h3>Food</h3>
+
+                            <div id="summaryFood">
+
+                                Nothing Selected
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="love-text">
+
+                    ❤️
+
+                    I can't wait to spend this beautiful day with you.
+
+                    Thank you for saying YES!
+
+                    ❤️
+
+                </p>
+
+                <div class="modal-buttons">
+
+                    <button id="editBtn" class="secondary-btn">
+
+                        ✏️ Edit
+
+                    </button>
+
+                    <button id="continueBtn" class="primary-btn">
+
+                        Continue 🌹
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =====================================================
+PART 3 STARTS FROM HERE
+(Bouquet + Relationship Timer + Ending)
+===================================================== -->
+        <!-- ===========================
+BOUQUET PAGE
+=========================== -->
+
+        <section id="bouquetPage" class="page">
+
+            <div class="glass-card bouquet-card">
+
+                <h1 class="bouquet-title">
+
+                    🌹 A Little Gift For You 🌹
+
+                </h1>
+
+                <div id="bouquetContainer">
+
+                    <img id="bouquetImage" src="assets/bouquet.png" alt="Bouquet">
+
+                </div>
+
+                <h2 id="typingText"></h2>
+
+                <button id="showTimerBtn" class="primary-btn">
+
+                    Continue ❤️
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ===========================
+RELATIONSHIP TIMER PAGE
+=========================== -->
+
+        <section id="timerPage" class="page">
+
+            <div class="glass-card timer-card">
+
+                <h1>
+
+                    ❤️ Together Since ❤️
+
+                </h1>
+
+                <h2>
+
+                    1 November 2019
+
+                </h2>
+
+                <div id="relationshipTimer" class="timer-grid">
+
+                    <div class="timer-box">
+
+                        <span id="years" class="timer-value">0</span>
+
+                        <small>Years</small>
+
+                    </div>
+
+                    <div class="timer-box">
+
+                         <span id="months" class="timer-value">0</span>
+
+                        <small>Months</small>
+
+                    </div>
+
+                    <div class="timer-box">
+
+                        <span id="days" class="timer-value">0</span>
+
+                        <small>Days</small>
+
+                    </div>
+
+                    <div class="timer-box">
+
+                        <span id="hours" class="timer-value">0</span>
+
+                        <small>Hours</small>
+
+                    </div>
+
+                    <div class="timer-box">
+
+                        <span id="minutes" class="timer-value">0</span>
+
+                        <small>Minutes</small>
+
+                    </div>
+
+                    <div class="timer-box">
+
+                        <span id="seconds" class="timer-value">0</span>
+
+                        <small>Seconds</small>
+
+                    </div>
+
+                </div>
+
+                <p class="timer-message">
+
+                    Every second with you
+                    has made my life
+                    more beautiful.
+
+                    ❤️
+
+                </p>
+
+                <button id="finalBtn" class="primary-btn">
+
+                    One Last Surprise ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ===========================
+FINAL SURPRISE PAGE
+=========================== -->
+
+<section id="finalPage" class="page">
+
+    <div class="glass-card final-card">
+
+        <h1 class="final-title">
+            🌹 It's Finally Our Date! 🌹
+        </h1>
+
+        <p class="final-subtitle">
+            Everything is ready...
+            Now all that's left is making beautiful memories together. ❤️
+        </p>
+
+        <!-- Date Plan -->
+
+        <div class="date-plan">
+
+            <div class="plan-item">
+
+                <span class="plan-icon">📅</span>
+
+                <div>
+
+                    <h3>Date</h3>
+<p id="finalDate"></p>
+
+                </div>
+
+            </div>
+
+            <div class="plan-item">
+
+                <span class="plan-icon">🕒</span>
+
+                <div>
+
+                    <h3>Time</h3>
+
+                    <p id="finalTime"></p>
+
+                </div>
+
+            </div>
+
+            <div class="plan-item">
+
+                <span class="plan-icon">🍽️</span>
+
+                <div>
+
+                    <h3>Our Menu</h3>
+
+                    <div id="finalFood"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Romantic Message -->
+
+        <div class="final-message">
+
+            <p>
+
+                Everything is planned with love.
+
+            </p>
+
+            <p>
+
+                I can't wait to see your smile,
+                laugh together,
+                enjoy our favorite food,
+                and create another unforgettable memory.
+
+            </p>
+
+            <p>
+
+                See you soon, my love. ❤️🌹
+
+            </p>
+
+        </div>
+
+        <!-- WhatsApp Button -->
+
+        <button id="sendPlanBtn" class="primary-btn">
+
+            💌 Send Our Date Plan ❤️
+
+        </button>
+
+    </div>
+
+</section>
+    <!-- ==================================
+ROMANTIC CONFIRMATION MODAL
+================================== -->
+
+<div id="confirmModal" class="confirm-modal">
+
+    <div class="confirm-card">
+
+        <h2>💕 One Last Confirmation 💕</h2>
+
+        <p class="confirm-subtitle">
+            Everything looks perfect!
+        </p>
+
+        <div id="confirmDetails" class="confirm-details"></div>
+
+        <div class="confirm-buttons">
+
+            <button
+                id="editBtn"
+                class="secondary-btn">
+                ✏ Edit
+            </button>
+
+            <button
+                id="confirmBtn"
+                class="primary-btn">
+                💖 Confirm
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ===========================
+AUDIO
+=========================== -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- ===========================
+JAVASCRIPT
+=========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
